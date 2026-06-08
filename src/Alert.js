@@ -1,10 +1,11 @@
 export function Alert({ type, heading, children, closable }) {
   return (
     <>
-      <div> {type} </div>
-      <div> {heading} </div>
-      <div> {children} </div>
-      {closable && <button> Close </button>}
+      <div>
+        <span>{type === 'warning' ? '⚠️' : 'ℹ️'}</span>
+        <span>{heading}</span>
+      </div>
+      <div>{children}</div>
     </>
   );
 }
