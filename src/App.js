@@ -5,7 +5,7 @@ import { Alert } from './Alert';
 export function App() {
   return (
     <Alert type="information" heading="success">
-      everyting is really good
+      everything is really good
     </Alert>
   );
 }
