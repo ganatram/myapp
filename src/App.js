@@ -3,12 +3,7 @@ import { Alert } from './Alert';
 
 export function App() {
   return (
-    <Alert
-      type="information"
-      heading="success"
-      closable={true}
-      onClose={() => console.log('prop func invoked from parent component')}
-    >
+    <Alert type="information" heading="success" closable={true} onClose={(x) => console.log(x)}>
       everything is really good
     </Alert>
   );

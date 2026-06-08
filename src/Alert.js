@@ -9,6 +9,8 @@ export function Alert({ type, heading, children, closable, onClose }) {
   // setterMethod should not be invoked unconditionally inside a component
   //setVisible(false); // visible = false - infinite loop - callstack will exceed
 
+  //function onClose() {}
+
   if (!visible) {
     return null;
   }
@@ -16,7 +18,7 @@ export function Alert({ type, heading, children, closable, onClose }) {
   function handleCloseClick() {
     console.log('callback function invoked');
     setVisible(false); // visible = false -- state change !
-    onClose();
+    onClose('some string from child component');
   }
 
   return (
