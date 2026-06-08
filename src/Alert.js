@@ -15,6 +15,7 @@ export function Alert({ type, heading, children, closable }) {
 
   function handleCloseClick() {
     console.log('callback function invoked');
+    setVisible(false); // visible = false -- state change !
   }
 
   return (
