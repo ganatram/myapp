@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { Alert } from './Alert';
 
 export function App() {
-  // ES6 binding
-  return <div> placeholder for app component </div>;
+  return (
+    <Alert type="information" heading="success">
+      everyting is really good
+    </Alert>
+  );
 }
