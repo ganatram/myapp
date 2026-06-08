@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
 export function Alert({ type, heading, children, closable }) {
-  const [visible, setVisible] = useState(true); // [state,setterMethod()]
+  const [visible, setVisible] = useState(true); // [state,setterMethod()] // visible = true
 
-  /*  if (!visible) {
+  if (!visible) {
     return null;
-  } */
+  }
 
   return (
     <>
