@@ -1,15 +1,9 @@
-export function Alert(Obj) {
-  /* Obj = {
-  type: "information",
-  heading: "success",
-  children:'everything is really good'
-} */
-
+export function Alert({ type, heading, children }) {
   return (
     <>
-      <div> {Obj.type} </div>
-      <div> {Obj.heading} </div>
-      <div> {Obj.children} </div>
+      <div> {type} </div>
+      <div> {heading} </div>
+      <div> {children} </div>
     </>
   );
 }
