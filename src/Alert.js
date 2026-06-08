@@ -1,9 +1,11 @@
-export function Alert({ type, heading, children, closable }) {
-  let visible = false;
+import { useState } from 'react';
 
-  if (!visible) {
-    return <div> hello component code </div>;
-  }
+export function Alert({ type, heading, children, closable }) {
+  const [visible, setVisible] = useState(true); // [state,setterMethod()]
+
+  /*  if (!visible) {
+    return null;
+  } */
 
   return (
     <>

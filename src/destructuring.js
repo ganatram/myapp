@@ -4,9 +4,19 @@
 
 // const smoothie = { fats: 'avocado', fruits: 'blueberry', greens: 'spinach' };
 
-// const { fats, fruits } = smoothie;
+// const { } = smoothie;
 
 // console.log(fats, fruits); // 'spinach'
+
+// Array Destructuring:
+
+/* let friends = ['Mark', 'Spencer', 'Jamie', 'Hill'];
+
+let [x, y] = friends;
+
+console.log(x); // 'Mark'
+
+console.log(y); // 'Spencer' */
 
 // prop-drilling
 // state
