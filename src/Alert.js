@@ -5,6 +5,7 @@ export function Alert({ type, heading, children, closable }) {
         <span>{type === 'warning' ? '⚠️' : 'ℹ️'}</span>
         <span>{heading}</span>
       </div>
+      {closable && <button>❌</button>}
       <div>{children}</div>
     </>
   );
