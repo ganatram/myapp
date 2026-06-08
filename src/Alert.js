@@ -1,5 +1,10 @@
 export function Alert(Obj) {
-  return <div> {Obj.type} </div>;
+  return (
+    <>
+      <div> {Obj.type} </div>
+      <div> {Obj.heading} </div>
+    </>
+  );
 }
 
 /* Obj = {
