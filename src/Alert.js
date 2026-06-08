@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export function Alert({ type, heading, children, closable }) {
+export function Alert({ type, heading, children, closable, onClose }) {
   const [visible, setVisible] = useState(true); // [state,setterMethod()] // visible = true
 
   // by default state entities are 'constants'
@@ -16,6 +16,7 @@ export function Alert({ type, heading, children, closable }) {
   function handleCloseClick() {
     console.log('callback function invoked');
     setVisible(false); // visible = false -- state change !
+    onClose();
   }
 
   return (

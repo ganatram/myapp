@@ -1,0 +1,18 @@
+
+
+
+state - useState() , useReducer() 
+navigation - useNavigate() 
+server communication 
+forms - 3rd party = useForm() - React Hook Forms 
+memoization = useCallback() , useMemo() , useRef() etc 
+
+
+
+Rules of Hooks, 
+
+       1) Hooks will work only with 'functional components' 
+
+                             & 
+
+       2) Hooks cannot be initialized conditionally. 
