@@ -4,7 +4,7 @@ import { Alert } from './Alert';
 
 export function App() {
   return (
-    <Alert type="information" heading="success">
+    <Alert type="information" heading="success" closable>
       everything is really good
     </Alert>
   );
