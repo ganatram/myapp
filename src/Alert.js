@@ -2,7 +2,7 @@ export function Alert({ type, heading, children, closable }) {
   let visible = false;
 
   if (!visible) {
-    return null;
+    return <div> hello component code </div>;
   }
 
   return (
