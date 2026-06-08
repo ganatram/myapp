@@ -13,13 +13,17 @@ export function Alert({ type, heading, children, closable }) {
     return null;
   }
 
+  function handleCloseClick() {
+    console.log('callback function invoked');
+  }
+
   return (
     <>
       <div>
         <span>{type === 'warning' ? '⚠️' : 'ℹ️'}</span>
         <span>{heading}</span>
       </div>
-      {closable && <button>❌</button>}
+      {closable && <button onClick={handleCloseClick}>❌</button>}
       <div>{children}</div>
     </>
   );
